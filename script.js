@@ -8,8 +8,8 @@ window.addEventListener("load", function () {
 
       for (index = 0; index < json.length; index++) {
         container.innerHTML += `
-          <div class = "astronant">
-          <div class = "info">
+          <div class = "astronaut">
+          <div class = "bio">
             <h3>${json[index].firstName} ${json[index].lastName}</h3>
             <ul>
               <li>Hours in space: ${json[index].hoursInSpace}</li>
@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
               <li>Skills: ${json[index].skills.join(", ")}</li>
             </ul>
             </div>
-            <img class ="selfie" src ="${json[index].picture}">
+            <img class ="avatar" src ="${json[index].picture}">
               </div>
           `;
 
