@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
       const container = document.getElementById("container");
 
       for (index = 0; index < json.length; index++) {
-        container.innerHTML = `
+        container.innerHTML += `
           <div class = "astronant">
           <div class = "info">
             <h3>${json[index].firstName} ${json[index].lastName}</h3>
@@ -20,7 +20,6 @@ window.addEventListener("load", function () {
             <img class ="selfie" src ="${json[index].picture}">
               </div>
           `;
-        let string = "";
 
         //console.log();
       }
